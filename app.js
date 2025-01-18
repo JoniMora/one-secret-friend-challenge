@@ -14,4 +14,6 @@ function addFriend() {
     console.log(friends);
 }
 
-
+document.getElementById('friend').addEventListener('keydown', function (event) {
+    if (event.key === 'Enter') addFriend();
+});
