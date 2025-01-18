@@ -8,11 +8,8 @@ function addFriend() {
     } else {
         friends.push(friend); 
         document.getElementById('friend').value = '';
-        console.log(friend);  
         renderFriendList();
     }
-
-    console.log(friends);
 }
 
 function renderFriendList(){
@@ -24,6 +21,17 @@ function renderFriendList(){
         li.textContent = friends[i];
         list.appendChild(li);
     }
+}
+
+function drawFriend() {
+    if (friends.length === 0) {
+        alert('No hay amigos para sortear.');
+        return;
+    }
+    const randomFriend = friends[Math.floor(Math.random() * friends.length)];
+
+    const resultList = document.getElementById('resultado');
+    resultList.innerHTML = `<li>¡El amigo secreto es: ${randomFriend}!</li>`;
 }
 
 document.getElementById('friend').addEventListener('keydown', function (event) {
