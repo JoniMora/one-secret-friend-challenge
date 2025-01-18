@@ -21,6 +21,6 @@ This is a simple **Secret Friend** game where users can add the names of their f
 Clone this repository to your local machine:
    ```bash
    git clone https://github.com/JoniMora/one-secret-friend-challenge
-
+   ```
 
 ![Game Screenshot](assets/Juego.png)
