@@ -23,4 +23,6 @@ Clone this repository to your local machine:
    git clone https://github.com/JoniMora/one-secret-friend-challenge
    ```
 
+## Game
+
 ![Game Screenshot](assets/Juego.png)
